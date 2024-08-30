@@ -13,9 +13,14 @@ export default function App() {
 
 return (
     <div>
-
-
-
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/angebote" element={<Angebote />} />
+          <Route path="/kontakt" element={<Kontakt />} />
+          <Route path="/ueber-uns" element={<Ueber />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
