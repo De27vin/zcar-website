@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sun, Moon } from 'lucide-react';
+import { Sun, Moon, Car } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
 import Home from "../pages/Home";
@@ -14,7 +14,7 @@ const Header = () => {
         <Router>
         <div class="grid grid-cols-3 gap-4 m-10">
             <div className='Logo'>
-                <img src='image/car.jpg' class="h-28"></img>
+                <Car size={70}/>
             </div>
             <nav className="bg-white shadow dark:bg-gray-800 rounded-lg flex items-center">
             <div className="container flex items-center justify-center p-6 mx-auto text-gray-600 capitalize dark:text-gray-300">
