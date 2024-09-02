@@ -1,20 +1,21 @@
 import React from 'react';
-import { Sun, Moon, Car } from 'lucide-react';
+import { Sun, Moon } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
 import Home from "../pages/Home";
 import Angebote from "../pages/Angebote";
 import Kontakt from "../pages/Kontakt";
 import Ueber from "../pages/Ueber";
+import Logo from "../assets/zcar-logo-porsche.png";
 
 const Header = () => {
   const { theme, toggleTheme } = useTheme();
   return (
     <header>
         <Router>
-        <div class="grid grid-cols-3 gap-4 m-10">
-            <div className='Logo'>
-                <Car size={70}/>
+        <div className="grid grid-cols-3 gap-4 m-10">
+            <div>
+              <img className="logo-picture" src={Logo} alt="Logo"></img>
             </div>
             <nav className="bg-white shadow dark:bg-gray-800 rounded-lg flex items-center">
             <div className="container flex items-center justify-center p-6 mx-auto text-gray-600 capitalize dark:text-gray-300">

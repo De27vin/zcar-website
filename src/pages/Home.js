@@ -16,7 +16,7 @@ export default function App() {
         <div></div>
         <div>
           <video class="flex justify-center" controls>
-            <source src="video/car.mp4" type="video/mp4"/>
+            <source src="/video/video-bmw-m4.mp4" type="video/mp4"/>
           </video>  
         </div>
         </div>
