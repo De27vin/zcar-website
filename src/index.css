@@ -15,3 +15,12 @@ code {
 .logo-picture {
   height: 6rem;
 }
+
+.video-home-page {
+  margin-bottom: 2rem;
+}
+
+.location-google-maps {
+  border: 0;
+  margin-bottom: 5rem;
+}
