@@ -4,10 +4,11 @@ import Header from "./components/Header"
 
 export default function App() {
   return (
+    
     <ThemeProvider>
-    <body>
+    <div className="bg-gray-100 dark:bg-gray-600 min-h-screen pt-10">
       <Header/>
-    </body>
+    </div>
     </ThemeProvider>
   );
 }
