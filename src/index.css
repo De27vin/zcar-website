@@ -24,3 +24,18 @@ code {
   border: 0;
   margin-bottom: 5rem;
 }
+
+.footer-logo {
+  width: 250px; 
+  height: 200px;
+  object-fit: cover;
+  object-position: center top; 
+}
+
+.autoscout-icon-footer {
+  width: 50px;
+}
+
+.github-icon-footer {
+  width: 40px;
+}
