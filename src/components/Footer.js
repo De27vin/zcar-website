@@ -8,14 +8,12 @@ import GH_ICON from "../assets/github-icon.png"
 export default function Header() {
     const { theme, toggleTheme } = useTheme();
     return (     
-    <footer class="w-full py-14">
+    <footer class="w-full mt-72">
         <Router>
 
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="max-w-3xl mx-auto">
-                <a href="/" class="flex justify-center ">
-                    <img className="footer-logo" src={Logo}></img>
-                </a>
+
                     <ul class="text-lg flex items-center justify-center flex-col gap-7 md:flex-row md:gap-12 transition-all duration-500 py-16 mb-10 border-b border-gray-200">
                         <li><a href="#" class="text-gray-800 hover:text-gray-900 dark:text-gray-300" >Irgendwas</a></li>
                         <li><a href="#" class=" text-gray-800 hover:text-gray-900 dark:text-gray-300">Irgendwas</a></li>
@@ -24,6 +22,9 @@ export default function Header() {
                         <li><a href="#" class=" text-gray-800 hover:text-gray-900 dark:text-gray-300">Irgendwas</a></li>
                     </ul>
                     <div class="flex space-x-10 justify-center items-center mb-14">
+                        <a href="/">
+                        <img src={Logo} class="h-12 w-12"></img>
+                        </a>
                         <a href="https://www.autoscout24.ch/de/s/seller-67583" class="block  text-gray-900 transition-all duration-500 hover:text-indigo-600 ">
                           <img className="autoscout-icon-footer" src={AS_ICON}></img>
                         </a>
