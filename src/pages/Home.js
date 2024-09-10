@@ -37,11 +37,35 @@ export default function App() {
         <div class="grid grid-cols-3 m-15">
           <div></div>
         <div class="h-12 rounded-2xl shadow-2xl w-full h-lvh p-10">
-        <div class="flex flex-col">
-        <div><h1 class="font-bold text-5xl dark:text-white">Preview</h1></div>  
-  <div>01</div>
-  <div>02</div>
-  <div>03</div>
+        <div class="flex flex-col justify-content-center">
+        <div><h1 class="font-bold text-5xl dark:text-white">Was unsere Kunden sagen</h1></div>  
+        <div class="max-w-sm rounded overflow-hidden shadow-lg">
+  <img class="w-full" src="/img/card-top.jpg" alt=""/>
+  <div class="px-6 py-4">
+    <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+    <p class="text-gray-700 text-base">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+    </p>
+  </div>
+</div>
+<div class="max-w-sm rounded overflow-hidden shadow-lg">
+  <img class="w-full" src="/img/card-top.jpg" alt=""/>
+  <div class="px-6 py-4">
+    <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+    <p class="text-gray-700 text-base">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+    </p>
+  </div>
+</div>
+<div class="max-w-sm rounded overflow-hidden shadow-lg">
+  <img class="w-full" src="/img/card-top.jpg" alt=""/>
+  <div class="px-6 py-4">
+    <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+    <p class="text-gray-700 text-base">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+    </p>
+  </div>
+</div>
 </div>
         </div>
         <div></div>
