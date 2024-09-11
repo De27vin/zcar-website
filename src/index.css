@@ -25,11 +25,8 @@ code {
   margin-bottom: 5rem;
 }
 
-.footer-logo {
-  width: 250px; 
-  height: 200px;
-  object-fit: cover;
-  object-position: center top; 
+.zcar-logo-footer {
+  width: 150px;
 }
 
 .autoscout-icon-footer {

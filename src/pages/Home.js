@@ -13,7 +13,7 @@ export default function App() {
         <div></div>
 
         <div className="video-home-page">
-          <video class="flex justify-center rounded-lg" controls>
+          <video autoPlay muted loop class="flex justify-center rounded-lg" controls>
             <source src="/video/video-bmw-m4.mp4" type="video/mp4"/>
           </video>  
         </div>
