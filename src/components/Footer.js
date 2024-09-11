@@ -10,18 +10,19 @@ export default function Header() {
     return (     
     <footer class="w-full mt-72">
         <Router>
-
+        <div class="grid grid-cols-3 h-48 ml-24 mr-24">
+            <div>
+            <div class="font-bold text-xl mb-2">Impressum</div> 
+            <p class="text-gray-700 text-base dark:text-slate-300">
+                Herr Hussein Zogheib <br/>
+                Bassersdorferstrasse 117 <br/>
+                8302 Kloten <br/>
+                079 000 00 00
+            </p>
+            </div>
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="max-w-3xl mx-auto">
-
-                    <ul class="text-lg flex items-center justify-center flex-col gap-7 md:flex-row md:gap-12 transition-all duration-500 py-16 mb-10 border-b border-gray-200">
-                        <li><a href="#" class="text-gray-800 hover:text-gray-900 dark:text-gray-300" >Irgendwas</a></li>
-                        <li><a href="#" class=" text-gray-800 hover:text-gray-900 dark:text-gray-300">Irgendwas</a></li>
-                        <li><a href="#" class=" text-gray-800 hover:text-gray-900 dark:text-gray-300">Irgendwas</a></li>
-                        <li><a href="#" class=" text-gray-800 hover:text-gray-900 dark:text-gray-300">Irgendwas</a></li>
-                        <li><a href="#" class=" text-gray-800 hover:text-gray-900 dark:text-gray-300">Irgendwas</a></li>
-                    </ul>
-                    <div class="flex space-x-10 justify-center items-center mb-14">
+                    <div class="flex space-x-10 justify-center items-center mb-14 border-t border-gray-200 pt-10">
                         <a href="/">
                         <img src={Logo} class="h-12 w-12"></img>
                         </a>
@@ -46,6 +47,8 @@ export default function Header() {
                     </div>
                     <span class="text-lg text-gray-500 text-center block">©<a>Z-Car</a> 2024, Alle Rechte vorbehalten.</span>
             </div>
+        </div>
+        <div></div>
         </div>
         </Router>                       
     </footer>
