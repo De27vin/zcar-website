@@ -11,7 +11,6 @@ import Logo from "../assets/zcar-logo-porsche.png";
 const Header = () => {
   const { theme, toggleTheme } = useTheme();
   return ( 
-    <header>
         <Router>
         <div className="grid grid-cols-3 gap-4 m-10">
             <div>
@@ -38,6 +37,7 @@ const Header = () => {
             </button>
             </div>
         </div>
+    
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/angebote" element={<Angebote />} />
@@ -45,7 +45,7 @@ const Header = () => {
             <Route path="/ueber-uns" element={<Ueber />} />
         </Routes>
       </Router>
-      </header>
+      
   );
 };
 function NavButton({ path, label }) {
