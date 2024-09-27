@@ -36,16 +36,21 @@ export default function App() {
 
     return (
       <>
-      {/* 1. Column with grid */}
-      <div className="grid grid-cols-2 m-20 place-items-center">
+      {/* 1. Column of grid */}
+      <div className="grid grid-cols-1 m-15 place-items-center">
 
         <div className="h-full w-full">
-          <video autoPlay muted loop className="flex justify-center rounded-lg ring-4 ring-black" controls>
+          <video autoPlay muted loop className="flex justify-center rounded-lg" controls>
             <source src="/video/video-bmw-m4.mp4" type="video/mp4"/>
           </video>
         </div>
 
-        {/* 3. Column with grid */}
+        {/* 2. Column of grid */}
+        <div class="location-grid-element-2" className="flex justify-center h-full w-full">
+          <p class="flex justify-center text-4xl" >Wo Sie uns finden!</p>
+        </div>
+
+        {/* 3. Column of grid */}
         <div className="flex justify-center h-full w-full">
           <iframe
             className="rounded-lg location-google-maps"
