@@ -46,7 +46,7 @@ export default function App() {
         </div>
 
         {/* 2. Column of grid */}
-        <div class="location-grid-element-2" className="flex justify-center h-full w-full">
+        <div class="location-grid-element-2 mt-7.5" className="flex justify-center h-full w-full">
           <p class="flex justify-center text-4xl" >Wo Sie uns finden!</p>
         </div>
 
