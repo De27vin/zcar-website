@@ -15,16 +15,16 @@ export default function App() {
       </div>
       <div class="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
         <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-            type="text" placeholder="First Name*" />
+            type="text" placeholder="Vorname*" />
         <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-            type="text" placeholder="Last Name*" />
+            type="text" placeholder="Nachname*" />
         <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
             type="email" placeholder="Email*" />
         <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-            type="number" placeholder="Phone*" />
+            type="tel" placeholder="Telefonnummer*" />
         </div>
         <div class="my-4">
-          <textarea placeholder="Message*" class="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
+          <textarea placeholder="Nachricht*" class="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
         </div>
         <div class="my-2 w-1/2 lg:w-1/4">
           <button class="uppercase text-sm font-bold tracking-wide bg-blue-800 hover:bg-blue-900 text-gray-100 p-3 w-full 

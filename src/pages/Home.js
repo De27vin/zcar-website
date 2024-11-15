@@ -40,7 +40,7 @@ export default function App() {
       <div className="grid grid-cols-1 m-15 place-items-center">
 
         <div className="h-full w-full">
-          <video autoPlay muted loop className="flex justify-center rounded-lg" controls>
+          <video autoPlay muted loop className="flex justify-center">
             <source src="/video/video-bmw-m4.mp4" type="video/mp4"/>
           </video>
         </div>

@@ -20,11 +20,11 @@ export default function Header() {
                           <img src={Logo} class="h-12 w-12 transform transition-transform duration-500 ease-in-out hover:scale-150" />
                         </a>
 
-                        <a href="https://www.autoscout24.ch/de/s/seller-67583" class="block text-gray-900 transition-all duration-500 ease-in-out hover:text-indigo-600">
+                        <a href="https://www.autoscout24.ch/de/s/seller-67583" target="_blank" class="block text-gray-900 transition-all duration-500 ease-in-out hover:text-indigo-600">
                           <img src={AS_ICON} class="h-12 w-12 transform transition-transform duration-500 ease-in-out hover:scale-150" />
                         </a>
 
-                        <a href="https://github.com/De27vin/zcar-website" class="block  text-gray-900 transition-all duration-500 hover:text-indigo-600 ">
+                        <a href="https://github.com/De27vin/zcar-website" target="_blank" class="block  text-gray-900 transition-all duration-500 hover:text-indigo-600 ">
                             <img src={GH_ICON} class="h-10 w-10 transform transition-transform duration-500 ease-in-out hover:scale-150" ></img>
                         </a>
                     </div>
