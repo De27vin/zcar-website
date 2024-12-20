@@ -28,9 +28,9 @@ const cards = [
       review: 'Kundenbetreuung 1A.',
   }, 
   {
-      name: ""
-
-
+      name: "",
+      rating: 1,
+      review: "",
   }
 ];
 
