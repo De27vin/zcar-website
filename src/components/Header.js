@@ -7,16 +7,16 @@ import Angebote from "../pages/Angebote";
 import BilderGallerie from "../pages/BilderGallerie";
 import Kontakt from "../pages/Kontakt";
 import Ueber from "../pages/Ueber";
-import Logo from "../assets/zcar-logo-porsche.png";
+import Logo from "../assets/images/zcar-logo.png";
 
 const Header = () => {
   const { theme, toggleTheme } = useTheme();
   return ( 
         <Router>
         <div className="grid grid-cols-3 gap-4 m-10">
-            <div>
-              <img className="logo-picture" src={Logo} alt="Logo"></img>
-            </div>
+        <div className="flex items-center ml-16">
+        <img className="h-10" src={Logo} alt="Logo" />
+        </div>
             <nav className="bg-white shadow dark:bg-gray-800 rounded-lg flex items-center">
             <div className="container flex items-center justify-center p-6 mx-auto text-gray-600 capitalize dark:text-gray-300">
                 <NavButton path="/" label="Home" />

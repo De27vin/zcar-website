@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import video from '../assets/videos/video-bmw-m4.mp4';
 
 const cards = [
   {
@@ -25,6 +26,11 @@ const cards = [
       name: 'Ulf J.',
       rating: 5,
       review: 'Kundenbetreuung 1A.',
+  }, 
+  {
+      name: ""
+
+
   }
 ];
 
@@ -41,7 +47,7 @@ export default function App() {
         {/* 1. Column of grid */}
         <div className="h-full w-full fist-column-grid-home">
           <video autoPlay muted loop className="flex justify-center">
-            <source src="/video/video-bmw-m4.mp4" type="video/mp4"/>
+            <source src={video} type="video/mp4"/>
           </video>
         </div>
 

@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
 import { useTheme } from '../context/ThemeContext';
-import Logo from "../assets/zcar-logo-porsche.png"
-import AS_ICON from "../assets/autoscout24-icon.png"
-import GH_ICON from "../assets/github-icon.png"
+import Logo from "../assets/images/zcar-logo.png"
+import AS_ICON from "../assets/images/autoscout24-icon.png"
+import GH_ICON from "../assets/images/github-icon.png"
 
 
 export default function Header() {
