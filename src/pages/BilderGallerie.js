@@ -5,6 +5,19 @@ export default function App() {
 
     return (
         <>
+        {/* Best offer single car */}
+        <div className="w-2/3 mx-auto items-center">
+            <div className="relative group">
+                <img className="w-full rounded-xl" src={Mercedes_benz_500_se} />
+
+                {/* Hovering with information */}
+                <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 mb-5">
+                    <p className="text-white text-lg font-semibold text-center">Mercedes-Benz<br/>500 SE<br /><br /><a className="underline">CHF 7'870.–</a></p>
+                </div>
+.
+            </div>
+        </div>
+        {/* Picture grid */}
         <div className="grid grid-cols-3 w-2/3 mx-auto items-center gap-5">
             {/* First row */}
             {/* Element 1 */}
