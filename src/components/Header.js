@@ -4,6 +4,7 @@ import { useTheme } from '../context/ThemeContext';
 import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
 import Home from "../pages/Home";
 import Angebote from "../pages/Angebote";
+import BilderGallerie from "../pages/BilderGallerie";
 import Kontakt from "../pages/Kontakt";
 import Ueber from "../pages/Ueber";
 import Logo from "../assets/zcar-logo-porsche.png";
@@ -20,6 +21,7 @@ const Header = () => {
             <div className="container flex items-center justify-center p-6 mx-auto text-gray-600 capitalize dark:text-gray-300">
                 <NavButton path="/" label="Home" />
                 <NavButton path="/angebote" label="Angebote" />
+                <NavButton path="/bilderGallerie" label="Gallerie" />
                 <NavButton path="/kontakt" label="Kontakt" />
                 <NavButton path="/ueber-uns" label="Über Uns" />
             </div>
@@ -41,6 +43,7 @@ const Header = () => {
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/angebote" element={<Angebote />} />
+            <Route path="/bilderGallerie" element={<BilderGallerie />} />
             <Route path="/kontakt" element={<Kontakt />} />
             <Route path="/ueber-uns" element={<Ueber />} />
         </Routes>
