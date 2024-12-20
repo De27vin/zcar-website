@@ -1,16 +1,16 @@
+import ReactMarkdown from "react-markdown";
 
+const markdownText = `
+# Über Z-Car
+## Über 
 
-export default function App() {
+`
+function MarkdownComponent() {
+  return (
+    <section>
+      <ReactMarkdown>{markdownText}</ReactMarkdown>
+    </section>
+  );
+}
 
-
-
-
-
-    return (
-        <div>
-    
-    
-    
-        </div>
-      );
-    }
+export default MarkdownComponent; 
