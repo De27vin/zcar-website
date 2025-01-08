@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import video from '../assets/videos/video-bmw-m4.mp4';
+import Check from "../assets/images/check.svg"
 
 const cards = [
   {
@@ -94,7 +95,7 @@ export default function App() {
             >
               {/* Render duplicated cards */}
               {duplicatedCards.map((card, index) => (
-                <div key={index} className="flex-shrink-0 p-4" style={{ width: `${100 / cards.length}%` }}>
+                <div key={index} className="flex-shrink-0 p-4" style={{ width: `1/2` }}>
                   <div className="max-w-sm rounded overflow-hidden shadow-lg h-48">
                     <div className="px-6 py-4 w-96">
                       <div className="font-bold text-xl mb-2">{card.name}</div>
@@ -121,6 +122,27 @@ export default function App() {
                 </div>
               ))}
             </motion.div>
+          </div>
+        </div>
+      </div>
+      <div className="grid grid-cols-1 mt-20 place-items-center">
+      <div className="rounded-2xl shadow-2xl w-full h-96 p-10">
+      <div>
+            <h1 className="font-bold text-4xl dark:text-white mb-10">Ihre Vorteile bei Z-Car</h1>
+          </div>
+          <div className="flex items-center gap-4">
+          <img className="h-6" src={Check} alt="Check"/>
+          <p className="font-semibold text-lg">Gratis Probefahrt</p>
+          </div>
+          <br/>
+          <div className="flex items-center gap-4">
+          <img className="h-6" src={Check} alt="Check"/>
+          <p className="font-semibold text-lg">Frischer MFK für jedes Fahrzeug</p>
+          </div>
+          <br/>
+          <div className="flex items-center gap-4">
+          <img className="h-6" src={Check} alt="Check"/>
+          <p className="font-semibold text-lg">Fahrzeug Besichtigung jederzeit</p>
           </div>
         </div>
       </div>
