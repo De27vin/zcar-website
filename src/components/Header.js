@@ -23,7 +23,6 @@ const Header = () => {
                 <NavButton path="/angebote" label="Angebote" />
                 <NavButton path="/bilderGallerie" label="Gallerie" />
                 <NavButton path="/kontakt" label="Kontakt" />
-                <NavButton path="/ueber-uns" label="Über Uns" />
             </div>
             </nav>
             <div className='flex justify-end'>

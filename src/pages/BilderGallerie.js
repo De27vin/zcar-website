@@ -26,7 +26,7 @@ export default function App() {
 <>
 <div className="flex flex-col items-center mx-auto space-y-6">
   {/* Überschrift */}
-  <p className="text-5xl font-bold">Bestseller</p>
+  <p className="text-5xl font-bold dark:text-white">Bestseller</p>
   
   {/* Best offer single car */}
   <div className="w-2/3 relative group">
@@ -153,8 +153,8 @@ export default function App() {
         <br/>
 
         <div className="flex flex-col items-center mx-auto space-y-6 mt-10">
-  {/* Überschrift */}
-  <p className="text-5xl font-bold">Schnäppchen</p>
+  {/* Title */}
+  <p className="text-5xl font-bold dark:text-white">Schnäppchen</p>
   
   {/* Best offer single car */}
   <div className="w-2/3 relative group">

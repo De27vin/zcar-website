@@ -29,32 +29,43 @@ const cards = [
       review: 'Kundenbetreuung 1A.',
   }, 
   {
-      name: "",
-      rating: 1,
-      review: "",
+      name: 'Jacqueline S.',
+      rating: 4,
+      review: 'Super Service',
+  },
+  {
+    name: 'Andreas A.',
+    rating: 4,
+    review: 'Rasch und unkompliziert, gerne wieder.',
+  },
+  {
+    name: 'Maria N.',
+    rating: 5,
+    review: 'Zuverlässig und treu gegenüber den Kunden',
+  },
+  { 
+    name: 'Kevin K.',
+    rating: 5,
+    review: 'Schon mehrmals hier gekauft, und immer zu fairen Preisen.',
   }
 ];
 
 export default function App() {
-
-
   const duplicatedCards = [...cards, ...cards];
 
-
-    return (
-      <>
+  return (
+    <>
       <div className="grid grid-cols-1 m-15 place-items-center">
-
         {/* 1. Column of grid */}
         <div className="h-full w-full fist-column-grid-home">
           <video autoPlay muted loop className="flex justify-center">
-            <source src={video} type="video/mp4"/>
+            <source src={video} type="video/mp4" />
           </video>
         </div>
 
         {/* 2. Column of grid */}
-        <div class="location-grid-element-2" className="flex justify-center h-full w-full">
-          <p class="flex justify-center text-4xl" >Wo Sie uns finden!</p>
+        <div className="flex justify-center h-full w-full mb-5 mt-5">
+          <p className="flex justify-center text-4xl font-bold dark:text-gray-300">Wo Sie uns finden</p>
         </div>
 
         {/* 3. Column of grid */}
@@ -65,7 +76,7 @@ export default function App() {
             title="Location of Z-Car on Google Maps"
             width="640"
             height="450"
-            allowFullScreen=""
+            allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
@@ -73,31 +84,31 @@ export default function App() {
       </div>
 
       {/* Horizontal line */}
-      <hr class="w-96 h-1 mx-auto my-4 bg-gray-700 border-0 rounded md:my-10 dark:bg-gray-500"></hr>
+      <hr className="w-96 h-1 mx-auto my-4 bg-gray-700 border-0 rounded md:my-10 dark:bg-gray-500"></hr>
 
       <div className="grid grid-cols-1 mt-20">
         <div className="h-12 rounded-2xl shadow-2xl w-full h-96 p-10">
           <div>
             <h1 className="font-bold text-5xl dark:text-white mb-10">Was unsere Kunden sagen</h1>
           </div>
+
           <div className="relative w-full overflow-hidden">
-            {/* Wrapping div for seamless looping */}
             <motion.div
-              className="flex"
-              animate={{
-                x: ['-40%', '0%'],
-                transition: {
-                  ease: 'linear',
-                  duration: 10,
-                  repeat: Infinity,
-                },
+              className="flex whitespace-nowrap"
+              animate={{ x: ["0%", "-50%"] }}
+              transition={{
+                ease: "linear",
+                duration: 15, 
+                repeat: Infinity,
               }}
             >
-              {/* Render duplicated cards */}
               {duplicatedCards.map((card, index) => (
-                <div key={index} className="flex-shrink-0 p-4" style={{ width: `1/2` }}>
+                <div 
+                  key={index} 
+                  className="flex-shrink-0 p-4 w-1/5" 
+                >
                   <div className="max-w-sm rounded overflow-hidden shadow-lg h-48">
-                    <div className="px-6 py-4 w-96">
+                    <div className="px-6 py-4 w-full">
                       <div className="font-bold text-xl mb-2">{card.name}</div>
                       <div className="flex items-center mt-4 mb-4">
                         {Array(card.rating).fill(0).map((_, i) => (
@@ -116,7 +127,9 @@ export default function App() {
                         <p className="ml-1 text-sm font-medium text-gray-500 dark:text-gray-400">von</p>
                         <p className="ml-1 text-sm font-medium text-gray-500 dark:text-gray-400">5</p>
                       </div>
-                      <p className="text-gray-700 text-base dark:text-slate-300">"{card.review}"</p>
+                      <p className="text-gray-700 text-base dark:text-slate-300">
+                        "{card.review}"
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -125,28 +138,32 @@ export default function App() {
           </div>
         </div>
       </div>
+
       <div className="grid grid-cols-1 mt-20 place-items-center">
-      <div className="rounded-2xl shadow-2xl w-full h-96 p-10">
-      <div>
+        <div className="rounded-2xl shadow-2xl w-full h-96 p-10">
+          <div>
             <h1 className="font-bold text-4xl dark:text-white mb-10">Ihre Vorteile bei Z-Car</h1>
           </div>
           <div className="flex items-center gap-4">
-          <img className="h-6" src={Check} alt="Check"/>
-          <p className="font-semibold text-lg">Gratis Probefahrt</p>
+            <img className="h-6" src={Check} alt="Check" />
+            <p className="font-semibold text-lg dark:text-gray-300">Gratis Probefahrt</p>
           </div>
+
           <br/>
+
           <div className="flex items-center gap-4">
-          <img className="h-6" src={Check} alt="Check"/>
-          <p className="font-semibold text-lg">Frischer MFK für jedes Fahrzeug</p>
+            <img className="h-6" src={Check} alt="Check" />
+            <p className="font-semibold text-lg dark:text-gray-300">Frischer MFK für jedes Fahrzeug</p>
           </div>
+
           <br/>
+
           <div className="flex items-center gap-4">
-          <img className="h-6" src={Check} alt="Check"/>
-          <p className="font-semibold text-lg">Fahrzeug Besichtigung jederzeit</p>
+            <img className="h-6" src={Check} alt="Check" />
+            <p className="font-semibold text-lg dark:text-gray-300">Fahrzeug Besichtigung jederzeit</p>
           </div>
         </div>
       </div>
     </>
-
-      );
-    }
+  );
+}
